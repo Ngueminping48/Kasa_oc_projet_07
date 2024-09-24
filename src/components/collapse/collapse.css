@@ -1,0 +1,58 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translateY(-200px);
+  }
+}
+
+.collapse {
+  margin: var(--margin-sm) 0;
+  width: 100%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border-radius: var(--radius-sm);
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  h2,
+  i {
+    margin: 10px;
+  }
+
+  .rotate {
+    animation: rotate 1s ease-in-out;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: wrap column;
+    gap: 2px;
+    overflow: hidden;
+    margin: -3px 0 0;
+    border-radius: var(--radius-sm);
+    padding: 10px;
+    font-size: 1rem;
+    text-align: justify;
+    background-color: var(--grey);
+
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  .translate {
+    animation: translate 1s ease-in-out;
+  }
+}

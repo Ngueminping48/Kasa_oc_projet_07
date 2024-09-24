@@ -1,0 +1,17 @@
+[id="about"] {
+  margin: var(--margin-tn);
+
+  @media (min-width: 768px) {
+    margin: var(--margin-sm) var(--margin-lg);
+
+    header ~ section {
+      margin: inherit auto;
+      padding: 0 100px;
+      width: calc(100% - 200px);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin: var(--margin-md) var(--margin-wd);
+  }
+}
