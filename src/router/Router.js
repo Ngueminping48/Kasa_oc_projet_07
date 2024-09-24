@@ -8,7 +8,7 @@ import About from '../pages/about/About';
 
 /**
  * Composant Router
- * 
+ * // * Ce code sert à afficher une page d'accueil, une page de rental, une page d'A propos, et une page d'erreur.
  */
 const Router = () => {
   return (
@@ -28,5 +28,6 @@ const Router = () => {
 
 
 // * Le composant Router est exporté par défaut pour pouvoir être importé et utilisé dans d'autres parties de l'application.
+
 
 export default Router;

@@ -9,6 +9,7 @@ import Notation from "../../components/notation/Notation";
 
 /**
  * Composant Rental
+ * // * Ce code sert à afficher une page de rental
  */
 
 const Rental = () => {
