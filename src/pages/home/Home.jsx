@@ -7,6 +7,7 @@ import Banner from "../../components/banner/Banner";
 
 /**
  * Composant Home
+ * // * Ce code sert à afficher une page d'accueil
  */
 
 const Home = () => {

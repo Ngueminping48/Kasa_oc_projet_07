@@ -7,6 +7,7 @@ import Collapse from '../../components/collapse/Collapse';
 
 /**
  * Composant About
+ * // * Ce code sert à afficher une page d'accueil
  */
 const About = () => {
   return (

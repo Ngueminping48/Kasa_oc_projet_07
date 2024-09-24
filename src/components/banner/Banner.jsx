@@ -2,6 +2,7 @@ import "./banner.css";
 
 /**
   Composant Banner
+  // * Ce code sert à afficher une page d'accueil
  */
 const Banner = ({ src, alt, title = "" }) => {
   return (
