@@ -1,28 +1,28 @@
-import React from 'react';
+import React from 'react'
 import data from '../../assets/data.json';
-import img from '../../assets/about.webp';
-import './about.css';
-import Banner from '../../components/banner/Banner';
-import Collapse from '../../components/collapse/Collapse';
+import aboutImg from '../../assets/about.webp';
+import Banner from '../../components/Banner/Banner';
+import Collapse from '../../components/Collapse/Collapse';
+import './about.css'
 
-/**
- * Composant About
- */
 const About = () => {
+
   return (
-    <main id='about'>
-      <Banner src={img} alt='About Banner' />
-
-      {data.collapse.map(({ title, content }) => (
-        <Collapse key={title} title={title} content={content} />
+    <main id="about">
+      <Banner src={aboutImg} alt="Des forêts entourées de montagnes"
+      />
+      <div className='about__collapse'>
+      {data.collapse.map(({title, content}) => (
+        <Collapse
+        key={title}
+        title={title}
+        content={content}
+        />
       ))}
+      </div>
+
     </main>
-  );
-};
+  )
+}
 
-
-// * Créez un composant fonctionnel About qui affiche le contenu de la page "A propos".
-
-// * Le composant About est exporté par défaut pour pouvoir être importé et utilisé dans d'autres parties de l'application.
-
-export default About;
+export default About
