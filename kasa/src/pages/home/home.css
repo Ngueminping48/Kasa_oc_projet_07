@@ -1,0 +1,36 @@
+[id='home'] {
+  margin: var(--margin-tn);
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    margin: var(--margin-sm) var(--margin-lg);
+
+    ul {
+      justify-content: center;
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      background-color: var(--grey);
+    }
+
+    li {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin: var(--margin-md) var(--margin-wd);
+
+    li {
+      width: calc((100% - 60px) / 3);
+    }
+  }
+}

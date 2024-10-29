@@ -1,0 +1,51 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--margin-tn);
+  font-size: 0.9rem;
+
+  img {
+    height: 45px;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
+  }
+
+  .active,
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 768px) {
+    margin: var(--margin-sm) var(--margin-lg);
+    font-size: 1.2rem;
+
+    img {
+      height: 55px;
+    }
+
+    ul {
+      gap: 3rem;
+      text-transform: capitalize;
+    }
+  }
+
+
+  @media (min-width: 1200px) {
+    margin: var(--margin-md) var(--margin-wd);
+    font-size: 1.5rem;
+
+    img {
+      height: 65px;
+    }
+
+    ul {
+      gap: 4rem;
+    }
+  }
+}
