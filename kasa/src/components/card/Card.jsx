@@ -1,18 +1,16 @@
+import React from 'react';
 import "./card.css";
 
-/**
- * Composant Card
- */
-const Card = ({ src, alt, title }) => {
-  return (
-    <figure className="card">
-      <img src={src} alt={alt} />
-
-      <figcaption>{title}</figcaption>
-    </figure>
-  );
+const Card = ({ id, title, cover, alt }) => {
+   return (
+       <figure className="card">
+           <img src={cover} alt={alt} />
+           <figcaption>
+               <h2>{title}</h2>
+           </figcaption>
+       </figure>
+   );
 };
 
-// •	Le composant Card est exporté par défaut pour pouvoir être importé et utilisé dans d'autres parties de l'application.
-
 export default Card;
+
